@@ -46,27 +46,24 @@ README.md: This README file.
 
 How to Use
 Database Setup:
-
 Use the schema.sql file to create the necessary tables in your SQL database (e.g., MySQL, PostgreSQL, SQLite).
 Populate the tables with data from inventory_forecasting.csv. You may need to write a data loading script or use a database import tool.
 
 Run SQL Queries:
-
 Execute the queries in sql_queries.sql against your populated database to perform stock level calculations, low inventory detection, reorder point estimation, inventory turnover analysis, and generate summary reports.
 
 Run Analytical Scripts:
-
 Ensure you have Python 3 installed along with the required libraries (pandas, matplotlib, statsmodels). You can install them using pip:
 pip install pandas matplotlib statsmodels
 Run the Python scripts (analyze_products.py, stock_adjustment_recommendations.py, supplier_performance_analysis.py, demand_forecasting.py) to generate analytical insights. Ensure inventory_forecasting.csv is in the correct path as referenced by the scripts.
 
 Review Reports and Summaries:
--Examine kpi_dashboard_mockup.md for a conceptual dashboard design.
--Read executive_summary.md for key insights and recommendations.
--Expected Business Impact
+1.Examine kpi_dashboard_mockup.md for a conceptual dashboard design.
+2.Read executive_summary.md for key insights and recommendations.
+3.Expected Business Impact
 
 By implementing this solution, Urban Retail Co. can expect to:
--Achieve smarter, data-driven inventory decisions.
--Significantly reduce stockouts and overstocks.
--Improve overall supply chain efficiency.
--Enhance customer satisfaction and boost profitability.
+1.Achieve smarter, data-driven inventory decisions.
+2.Significantly reduce stockouts and overstocks.
+3.Improve overall supply chain efficiency.
+4.Enhance customer satisfaction and boost profitability.
