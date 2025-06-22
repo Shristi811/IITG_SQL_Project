@@ -1,31 +1,31 @@
 -- Products Table
 CREATE TABLE Products (
-    product_id VARCHAR(50) PRIMARY KEY,
-    category VARCHAR(100),
-    price DECIMAL(10, 2)
+    product_id VARCHAR(10) PRIMARY KEY,
+    category VARCHAR(50)
 );
 
 -- Stores Table
 CREATE TABLE Stores (
-    store_id VARCHAR(50) PRIMARY KEY,
-    region VARCHAR(100)
+    store_id VARCHAR(10) PRIMARY KEY,
+    region VARCHAR(50)
 );
 
--- Inventory_Transactions Table
-CREATE TABLE Inventory_Transactions (
-    transaction_id INT AUTO_INCREMENT PRIMARY KEY,
-    date DATE,
-    store_id VARCHAR(50),
-    product_id VARCHAR(50),
+-- Sales Table (fact table)
+CREATE TABLE Sales (
+    sale_id SERIAL PRIMARY KEY,
+    sale_date DATE,
+    store_id VARCHAR(10),
+    product_id VARCHAR(10),
     inventory_level INT,
     units_sold INT,
     units_ordered INT,
-    demand_forecast DECIMAL(10, 2),
-    discount DECIMAL(10, 2),
-    weather_condition VARCHAR(100),
+    demand_forecast FLOAT,
+    price FLOAT,
+    discount INT,
+    weather_condition VARCHAR(30),
     holiday_promotion BOOLEAN,
-    competitor_pricing DECIMAL(10, 2),
-    seasonality VARCHAR(50),
+    competitor_pricing FLOAT,
+    seasonality VARCHAR(30),
     FOREIGN KEY (store_id) REFERENCES Stores(store_id),
     FOREIGN KEY (product_id) REFERENCES Products(product_id)
 );
