@@ -1,0 +1,16 @@
+
+--- Fast-Selling Products ---
+   Product ID  Units Sold
+4       P0057      387209
+3       P0046      386805
+20      P0133      385843
+29      P0187      385583
+17      P0125      385137
+
+--- Slow-Moving Products ---
+   Product ID  Units Sold
+27      P0178      384440
+9       P0069      382968
+18      P0126      378954
+14      P0094      365157
+24      P0166      364393
